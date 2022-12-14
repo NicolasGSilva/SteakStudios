@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/logo/favicon.ico" type="image/x-icon">
+    <title>SteakStudios</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" target="_self" class="headerimg"><img src="imagens/logo/logo.png" alt="steaklogo"></a>
+    <nav>
+        <a href="index.html" target="_self">Página Inicial</a>
+        <a href="jogos.html" target="_self">jogos</a>
+        <a href="arquivos.html" target="_self">Arquivos</a>
+    </nav>
+    </header>
+    <main>
+        <div id="slider">
+            <div id="sliderconfig">
+                <input type="radio" name="radiobtn" id="radio1">
+                <input type="radio" name="radiobtn" id="radio2">
+                <input type="radio" name="radiobtn" id="radio3">
+                <input type="radio" name="radiobtn" id="radio4">
+                <div class="sliderimg sliderimg1">
+                    <a href="jogos/topdshooter/TDS.html" target="_self" class="gamelink">
+                        <p>TDS</p>
+                        <picture>
+                            <source media="(max-width: 1000px)" srcset="imagens/aba1/shooter2.png">
+                            <img src="imagens/aba1/shooter1.png" alt="tdsimg" class="aba1img">
+                        </picture>
+                    </a>
+                </div>
+                <div class="sliderimg">
+                    <a href="jogos/missãosalvação/index.html" target="_self" class="gamelink">
+                        <p>C.C.A Missão Salvação</p>
+                        <picture>
+                            <source media="(max-width: 1000px)" srcset="imagens/aba1/cca2.png">
+                            <img src="imagens/aba1/cca1.png" alt="ccaimg" class="aba1img">
+                        </picture>
+                    </a>
+                </div>
+                <div class="sliderimg">
+                    <a href="jogos/jumpforest/Jump Forest (Beta04).html" target="_self" class="gamelink">
+                        <p>Jump Florest</p>
+                        <picture>
+                            <source media="(max-width: 1000px)" srcset="imagens/aba1/forest2.png">
+                            <img src="imagens/aba1/forest1.png" alt="forestimg" class="aba1img">
+                        </picture>
+                    </a>
+                </div>
+                <div class="sliderimg">
+                    <a href="jogos/bountyhunter/index.html" target="_self" class="gamelink">
+                        <p>Bounty Hunter</p>
+                        <picture>
+                            <source media="(max-width: 1000px)" srcset="imagens/aba1/bounty2.png">
+                            <img src="imagens/aba1/bounty1.png" alt="bountyimg" class="aba1img">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div id="mannav">
+                <label for="radio1" class="manbtn"></label>
+                <label for="radio2" class="manbtn"></label>
+                <label for="radio3" class="manbtn"></label>
+                <label for="radio4" class="manbtn"></label>
+            </div>
+        </div>
+        <script src="slider1.js"></script>
+        <div id="slider2">
+            <button class="setaesq control" aria-label="Previous image">&ltcc;</button>
+            <button class="setadir control" aria-label="Next Image">&gtcc;</button>
+            <div id="slider2config">
+              <div id="imagens">
+                <a href="jogos/dodgethecreeps/Dodge the Creeps.html" target="_self" class="aba1link">
+                    <img src="imagens/aba1/dodgep.png" alt="dodgeimg" class="slider2img slider2img1">
+                    <p>Dodge the Creeps</p>
+                </a>
+                <a href="jogos/topdshooter/TDS.html" target="_self" class="aba1link">
+                    <img src="imagens/aba1/shooterp.png" alt="tdsimg" class="slider2img">
+                    <p>TDS</p>
+                </a>
+                <a href="jogos/gdpaint/GD Paint.html" target="_self" class="aba1link">
+                    <img src="imagens/aba1/paintp.png" alt="paintimg" class="slider2img">
+                    <p>GD Paint</p>
+                </a>
+                <a href="jogos/missãosalvação/index.html" target="_self" class="aba1link">
+                    <img src="imagens/aba1/ccap.png" alt="ccaimg" class="slider2img">
+                    <p>C.C.A Missão Salvação</p>
+                </a>
+                <a href="jogos/multiplayerbomber/Multiplayer Bomber.html" target="_self" class="aba1link">
+                    <img src="imagens/aba1/bomberp.png" alt="bomberimg" class="slider2img">
+                    <p>Multiplayer Bomber</p>
+                </a>
+                <a href="jogos/jumpforest/Jump Forest (Beta04).html" target="_self" class="aba1link">
+                    <img src="imagens/aba1/forestp.png" alt="forestimg" class="slider2img">
+                    <p>Jump Florest</p>
+                </a>
+                <a href="jogos/pongwithgdscript/Pong with GDScript.html" target="_self" class="aba1link">
+                    <img src="imagens/aba1/pongp.png" alt="pongimg" class="slider2img">
+                    <p>Pong With GDScript</p>
+                </a>
+                <a href="jogos/bountyhunter/index.html" target="_self" class="aba1link">
+                    <img src="imagens/aba1/bountyp.png" alt="bountyimg" class="slider2img">
+                    <p>Bounty Hunter</p>
+                </a>
+              </div>
+            </div>
+        </div>
+        <script src="slider2.js"></script>
+    </main>
+    <footer>
+        <p>criado por <strong><a href="index.html" target="_self">SteakStudios</a></strong></p>
+    </footer>
+</body>
+</html>

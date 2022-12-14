@@ -1,0 +1,353 @@
+@charset "UTF=8";
+@font-face {
+   font-family: staypixel;
+   src: url(fonts/staypixel.ttf);
+   font-weight: normal;
+}
+@font-face {
+   font-family: kanit;
+   src: url(fonts/Kanit.ttf);
+   font-weight: bolder;
+}
+@font-face {
+   font-family: oswald;
+   src: url(fonts/oswald.ttf);
+   font-weight: normal;
+}
+@font-face {
+   font-family: squaredance;
+   src: url(fonts/squaredance.ttf);
+   font-weight: normal;
+}
+@font-face {
+   font-family: sourcecode;
+   src: url(fonts/sourcecode.ttf);
+   font-weight: normal;
+}
+:root{
+   --corheader: #FF9902;
+   --corlinkativo: #CF5439;
+   --corbackground: #0C1B33;
+   --cormain: #A6A6A8;
+   --corfooter: #FF9902;
+   --fonteheader: 'staypixel', cursive;
+   --fontemain1: 'kanit', sans-serif;
+   --fontemain2: 'oswald', sans-serif;
+   --fontemain3: 'squaredance', cursive;
+   --fontelinkaba3button: 'staypixel', cursive;
+   --fontefooter: 'sourcecode', monospace;
+}
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+body{
+   width: 100%;
+   height: 100vh;
+   background-color: var(--corbackground);
+}
+/*Header*/
+header{
+   top: 0;
+   width: 100%;
+   height: 70px;
+   background-color: var(--corheader);
+   display: block;
+}
+header img{
+   position: absolute;
+   top: 3px;
+   left: 7.5%;
+}
+nav{
+   position: absolute;
+   text-align: right;
+   top: 12px;
+   right: 7.5%;
+}
+nav a{
+   font-family: var(--fonteheader);
+   font-size: 2.5em;
+   color: #ffffff;
+   text-shadow: 5px 5px 3px #00000070;
+   text-decoration: none;
+}
+nav a:hover{
+   background-color: #CF543999;
+   padding: 10px;
+   border-radius: 50px;
+}
+nav a:active{
+   color: var(--corlinkativo);
+}
+nav a:not(:last-child){
+   margin-right: 20px;
+}
+/*HederFim*/
+main{
+   background-color: var(--cormain);
+   max-width: 85%;
+   box-shadow: 3px 5px 10px #808080;
+   margin: auto;
+}
+/*aba1*/
+#slider{
+   margin: 0 auto;
+   max-width: 800px;
+   overflow: hidden;
+}
+#sliderconfig{
+   width: 400%;
+   display: flex;
+}
+#sliderconfig input{
+   display: none;
+}
+.sliderimg{
+   width: 25%;
+   transition: 1.5s;
+}
+.gamelink{
+   max-width: 800px;
+   text-decoration: none;
+}
+.gamelink p{
+   font-family: var(--fontemain1);
+   font-size: 2.5em;
+   text-align: center;
+   color: #000000;
+   padding: 2% 0 10px;
+}
+.gamelink picture{
+   display: flex;
+   justify-content: center;
+}
+#radio1:checked ~ .sliderimg1{
+   margin-left: 0;
+}
+#radio2:checked ~ .sliderimg1{
+   margin-left: -25%;
+}
+#radio3:checked ~ .sliderimg1{
+   margin-left: -50%;
+}
+#radio4:checked ~ .sliderimg1{
+   margin-left: -75%;
+}
+#slider2{
+   position: relative;
+   padding: 60px 0 0;
+   max-width: 950px;
+   margin: 0 auto;
+}
+#slider2config{
+   max-width: 850px;
+   margin: auto;
+   overflow-x: auto;
+}
+.setaesq{
+   font-size: 50px;
+   color: #ffffff;
+   background: linear-gradient(to left, transparent, #A6A6A8);
+   transition: all 600ms ease-in-out;
+   opacity: 0.5;
+   width: 50px;
+   height: 60px;
+   position: absolute;
+   top: 45%;
+   right: auto;
+   bottom: 0;
+   left: 0;
+   cursor: pointer;
+   border: none;
+}
+.setadir{
+   font-size: 50px;
+   color: #ffffff;
+   background: linear-gradient(to right, transparent, #A6A6A8);
+   transition: all 600ms ease-in-out;
+   opacity: 0.5;
+   width: 50px;
+   height: 60px;
+   position: absolute;
+   top: 45%;
+   right: 0;
+   bottom: 0;
+   left: auto;
+   cursor: pointer;
+   border: none;
+}
+.setaesq:hover{
+   opacity: 1;
+}
+.setadir:hover{
+   opacity: 1;
+}
+#imagens{
+   display: flex;
+   flex-flow: row nowrap;
+   gap: 20px;
+}
+.aba1link{
+   font-family: var(--fontemain1);
+   text-decoration: none;
+}
+.aba1link p{
+   font-family: var(--fontemain1);
+   color: #ffffff;
+   text-align: center;
+   opacity: 0.5;
+   margin: -30px 0 30px;
+}
+.aba1link p:hover{
+   color: var(--corlinkativo);
+   background: linear-gradient(to bottom, transparent, #A6A6A8);
+   opacity: 1;
+   transition: 1s;
+}
+.slider2img{
+   width: 250px;
+   height: 250px;
+   flex-shrink: 0;
+   transition: all 600ms ease-in-out;
+   opacity: 0.5;
+}
+.slider2img1{
+   opacity: 1;
+}
+#slider2config::-webkit-scrollbar{
+   display: none;
+}
+#slider2config{
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+}
+/*aba2*/
+#mainaba2-3{
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   margin-bottom: 40px;
+}
+.aba2div{
+   max-width: 90%;
+   margin: 0 auto;
+   padding: 10px 0px 50px;
+}
+.aba2div1{
+   padding-top: 75px;
+}
+.aba2div4{
+   padding-bottom: 50px;
+}
+.aba2div img{
+   display: flex;
+   margin: 0 auto;
+}
+.aba2div p{
+   font-family: var(--fontemain2);
+   font-size: 1.2em;
+   padding-top: 15px;
+   text-align: justify;
+}
+/*aba3*/
+#tabela{
+   max-width: 80%;
+   margin: 0 auto;
+}
+#tabela a{
+   font-family: var(--fontemain3);
+   font-size: 1em;
+   color: #000000;
+   text-decoration: none;
+}
+#tabela a:hover{
+   text-decoration: underline;
+}
+table{
+   width: 50%;
+   border-collapse: collapse;
+   background-color: #FF9902;
+   table-layout: fixed;
+}
+table border-colapse{
+   display: none;
+}
+td{
+   font-family: var(--fontemain2);
+   font-size: 1.5em;
+   padding: 5px 15px;
+}
+#aba3id1{
+   display: flex;
+   justify-content: right;
+   padding: 5% 0 0;
+}
+#aba3img1{
+   margin: auto;
+}
+#aba3id2{
+   display: flex;
+   padding: 2% 0 0;
+}
+#aba3img2{
+   margin: auto;
+   display: flex;
+   justify-content: right;
+}
+#aba3id3{
+   display: flex;
+   justify-content: right;
+   padding: 2% 0 0;
+}
+#aba3img3{
+   margin: auto;
+}
+#aba3id4{
+   display: flex;
+   justify-content: left;
+   padding: 5% 0 5%;
+}
+#aba3img4{
+   margin: auto;
+   display: flex;
+   justify-content: right;
+}
+.tdesq{
+   text-align: left;
+}
+.tddir{
+   text-align: right;
+}
+#tdlink{
+   padding: 0;
+}
+#aba3btn{
+   font-family: var(--fontelinkaba3button);
+   width: 100%;
+   font-size: 1em;
+   padding: 6px 0;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+/*Footer*/
+footer{
+   width: 100%;
+   height: 40px;
+   background-color: var(--corfooter);
+ }
+ footer p{
+   font-family: var(--fontefooter);
+   text-align: center;
+   font-size: 1.2em;
+   color: #000000;
+ }
+ footer a{
+   color: #000000;
+   text-decoration: none;
+ }
+ footer a:hover{
+   text-decoration: underline;
+ }
+ /*FooterFim*/
