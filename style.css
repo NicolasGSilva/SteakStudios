@@ -54,6 +54,7 @@ header{
    height: 70px;
    background-color: var(--corheader);
    display: block;
+   box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.521);
 }
 header img{
    position: absolute;
@@ -77,6 +78,7 @@ nav a:hover{
    background-color: #CF543999;
    padding: 10px;
    border-radius: 50px;
+   transition-duration: .5s;
 }
 nav a:active{
    color: var(--corlinkativo);
@@ -88,9 +90,36 @@ nav a:not(:last-child){
 main{
    background-color: var(--cormain);
    max-width: 85%;
-   box-shadow: 3px 5px 10px #808080;
+   box-shadow: 0px 0px 7px #000000;
    margin: auto;
+   margin-top: 2%;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 20px;
+   padding-top: 1px;
 }
+/*barradestaque*/
+#barras{
+text-align: center;
+text-shadow: 2px 2px rgba(0, 0, 0, 0.445);
+font-size: larger;
+font-family: var(--fontemain1);
+background-color: var(--corheader);
+border-radius: 5px;
+padding: 2px 2px 2px 2px;
+margin-top: 2%;
+margin-left: 35%;
+margin-right: 35%;
+box-shadow: 0px 1px 1px black ;
+
+}
+hr{
+border-color: var(--corlinkativo);
+max-width: 90%;
+position: relative;
+left: 5%;
+margin-bottom: 15px;
+}
+
 /*aba1*/
 #slider{
    margin: 0 auto;
@@ -107,6 +136,7 @@ main{
 .sliderimg{
    width: 25%;
    transition: 1.5s;
+
 }
 .gamelink{
    max-width: 800px;
@@ -244,10 +274,13 @@ main{
    display: flex;
    margin: 0 auto;
 }
+.aba2div h2{
+   font-family: var(--fontemain1);
+   padding-top: 15px;
+}
 .aba2div p{
    font-family: var(--fontemain2);
    font-size: 1.2em;
-   padding-top: 15px;
    text-align: justify;
 }
 /*aba3*/
@@ -258,22 +291,26 @@ main{
 #tabela a{
    font-family: var(--fontemain3);
    font-size: 1em;
-   color: #000000;
+   color: var(--corheader);
    text-decoration: none;
 }
 #tabela a:hover{
    text-decoration: underline;
+   text-decoration-color: #0C1B33;
+   cursor: grab;
 }
 table{
    width: 50%;
    border-collapse: collapse;
-   background-color: #FF9902;
+   background-color: var(--corbackground);
    table-layout: fixed;
+   border-color: #000000;
 }
 table border-colapse{
    display: none;
 }
 td{
+   color: #ffffff;
    font-family: var(--fontemain2);
    font-size: 1.5em;
    padding: 5px 15px;
@@ -321,21 +358,26 @@ td{
 }
 #tdlink{
    padding: 0;
+
 }
 #aba3btn{
    font-family: var(--fontelinkaba3button);
+   color: white;
+   background-color: var(--corfooter);
    width: 100%;
    font-size: 1em;
    padding: 6px 0;
    display: flex;
    justify-content: center;
    text-align: center;
+   cursor: grab;
 }
 /*Footer*/
 footer{
    width: 100%;
    height: 40px;
    background-color: var(--corfooter);
+   box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.521);
  }
  footer p{
    font-family: var(--fontefooter);
